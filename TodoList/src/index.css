@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Cairo:wght@200..1000&family=Marhey:wght@300..700&display=swap');
+
+:root {
+  --background-color: #121212;
+  --text-color: #E0E0E0;
+  --input-background-color: #2C2C2C;
+  --button-background-color: #2C2C2C;
+  --hover-opacity: 0.7;
+  --todo-item-background-color: #1E1E1E;
+}
+
+* {
+  font-family: "Cairo", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--text-color);
+  user-select: none;
+}
+
+h1,
+h2,
+h3,
+input,
+button {
+  font-family: "Cairo", sans-serif;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 14px;
+  background: var(--background-color);
+  gap: 14px;
+}
+
+header {
+  display: flex;
+  align-items: stretch;
+}
+
+header,
+.main {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  gap: 14px;
+}
+
+header input {
+  flex: 1;
+  border-radius: 14px;
+  outline: none;
+  width: 100%;
+  background: var(--input-background-color);
+  color: var(--text-color);
+}
+
+header button {
+  border-radius: 14px;
+  background: var(--button-background-color);
+  transition-duration: 200ms;
+  cursor: pointer;
+  color: var(--text-color);
+}
+
+header button:hover {
+  opacity: var(--hover-opacity);
+}
+
+header button,
+header input {
+  padding: 14px 18px;
+  border: none;
+  outline: none;
+}
+
+p {
+  font-size: 0.9em;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.todoItem {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px;
+  border-radius: 14px;
+  background: var(--todo-item-background-color);
+}
+
+.todoItem p {
+  flex: 1;
+}
+
+.actionsContainer {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.actionsContainer button {
+  transition-duration: 200ms;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: var(--text-color);
+}
+
+.actionsContainer button:hover {
+  opacity: var(--hover-opacity);
+}
+
+@media (min-width: 640px) {
+  header button,
+  header input {
+    font-size: 1.2em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+}
