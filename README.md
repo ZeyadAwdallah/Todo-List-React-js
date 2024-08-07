@@ -1,4 +1,4 @@
-### Todo List Application 
+****### Todo List Application 
 
 #### Overview
 
@@ -59,3 +59,7 @@ The application uses `localStorage` to persist the todos. This ensures that the 
 - **Responsive Design**: The application layout adjusts based on the screen size for an optimal user experience on different devices.
 - **User-Friendly Interface**: Easy-to-use input field and buttons for managing todos.
 - **State Persistence**: Uses `localStorage` to save and load todos, providing a seamless user experience.
+
+<div align="center">
+  <img src="/Todo.PNG" alt="Logo" width="750"/>
+</div>
